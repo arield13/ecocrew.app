@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoCrew - Clean Together, Earn Together</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    .hero-background {
+      background-image: url('bg.png');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="logo.png" alt="EcoCrew Logo" class="h-10 mr-3" />
+        <h1 class="text-2xl font-bold text-green-600">EcoCrew</h1>
+      </div>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#about" class="text-gray-700 hover:text-green-600">About</a>
+        <a href="#features" class="text-gray-700 hover:text-green-600">Features</a>
+        <a href="#rewards" class="text-gray-700 hover:text-green-600">Rewards</a>
+        <a href="#vision" class="text-gray-700 hover:text-green-600">Our Vision</a>
+        <a href="#support" class="text-gray-700 hover:text-green-600">Support Us</a>
+        <a href="#contact" class="text-gray-700 hover:text-green-600">Contact</a>
+      </nav>
+      <button id="menu-button" class="md:hidden text-gray-700 hover:text-green-600 focus:outline-none">
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="responsive-menu" class="hidden md:hidden bg-white py-4 px-6 absolute top-full left-0 w-full shadow-md z-40">
+      <a href="#about" class="block py-2 text-gray-700 hover:text-green-600">About</a>
+      <a href="#features" class="block py-2 text-gray-700 hover:text-green-600">Features</a>
+      <a href="#rewards" class="block py-2 text-gray-700 hover:text-green-600">Rewards</a>
+      <a href="#vision" class="block py-2 text-gray-700 hover:text-green-600">Our Vision</a>
+      <a href="#support" class="block py-2 text-gray-700 hover:text-green-600">Support Us</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-green-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-24 hero-background text-center text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">Join the Movement for a Cleaner Future</h2>
+      <p class="text-lg mb-8 max-w-2xl mx-auto drop-shadow-md">
+        Report trash, clean your neighborhood, earn points, and help protect the planet with EcoCrew. Empowering Citizens, Cleaning Communities.
+      </p>
+      <a href="#contact" class="inline-block bg-green-600 px-6 py-3 rounded-full text-lg hover:bg-green-700">
+        Get Involved
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+ <section id="about" class="py-24 bg-green-50">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-extrabold text-green-700 mb-4">🌍 Why EcoCrew?</h3>
+    <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+      EcoCrew empowers individuals to make their cities cleaner. Our mission is to encourage environmental action by rewarding users for trash reports and cleanups while providing valuable data to cities and cleanup teams.
+    </p>
+  </div>
+</section>
+
+  <!-- Features -->
+  <section id="features" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-4xl font-extrabold text-center text-green-700 mb-12">⚙️ How It Works</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-xl border-t-4 border-green-600 bg-gray-50 shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-semibold mb-2">📸 Report Trash</h4>
+        <p class="text-gray-700">Spot waste? Snap a photo, report via app, and earn EcoPoints.</p>
+      </div>
+      <div class="p-6 rounded-xl border-t-4 border-green-600 bg-gray-50 shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-semibold mb-2">🧹 Personal Cleanup</h4>
+        <p class="text-gray-700">Do the cleanup yourself and earn more points by uploading proof.</p>
+      </div>
+      <div class="p-6 rounded-xl border-t-4 border-green-600 bg-gray-50 shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-semibold mb-2">📍 Heatmaps</h4>
+        <p class="text-gray-700">We highlight high-waste areas to help cities act faster and smarter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Rewards -->
+  <section id="rewards" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-extrabold text-green-700 mb-4 flex justify-center items-center gap-3">
+        🏆 Earn Rewards Like a Champion!
+      </h3>
+      <p class="text-gray-700 text-lg max-w-2xl mx-auto mb-4">
+        Every cleanup action you take helps the planet — and earns you EcoPoints 🌿.
+      </p>
+      <p class="text-gray-600 max-w-2xl mx-auto mb-6">
+        Turn your contributions into real rewards! Redeem points for discounts and perks at participating eco-friendly businesses.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div class="bg-green-50 border border-green-200 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+          <div class="text-5xl mb-4">🎁</div>
+          <h4 class="text-xl font-semibold text-green-800 mb-2">Exclusive Offers</h4>
+          <p class="text-gray-700">Enjoy discounts at local cafes, markets, and eco-shops.</p>
+        </div>
+        <div class="bg-green-50 border border-green-200 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+          <div class="text-5xl mb-4">💚</div>
+          <h4 class="text-xl font-semibold text-green-800 mb-2">Recognition</h4>
+          <p class="text-gray-700">See your name featured on leaderboards and community spotlights.</p>
+        </div>
+        <div class="bg-green-50 border border-green-200 p-6 rounded-lg shadow hover:shadow-md transition duration-300">
+          <div class="text-5xl mb-4">🛍️</div>
+          <h4 class="text-xl font-semibold text-green-800 mb-2">Redeem for Goodies</h4>
+          <p class="text-gray-700">Trade your EcoPoints for merch, gear, and more.</p>
+        </div>
+      </div>
+      <p class="text-sm text-gray-400 mt-8 italic">
+        🌱 Coming soon: partnerships with coffee shops, markets, and more!
+      </p>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section id="vision" class="py-24 bg-gradient-to-r from-green-50 to-green-100">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-extrabold text-green-700 mb-10">🌟 Our Vision</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">💡 Rewarding Habit</h4>
+        <p class="text-gray-700">Turn civic responsibility into a lifestyle of positive impact.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">🤝 Connected Mission</h4>
+        <p class="text-gray-700">Unite citizens, businesses, and governments to work together.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">🚀 Scalable Platform</h4>
+        <p class="text-gray-700">Deliver insights to city officials and brands ready to go green.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Support -->
+  <section id="support" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-extrabold text-green-700 mb-4">🙏 Why We Need Support</h3>
+    <p class="text-gray-700 max-w-3xl mx-auto mb-12">
+      Our MVP works — now we need help to grow. Let’s scale our impact with better infrastructure and active partnerships.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+        <h4 class="text-xl font-semibold mb-2">⚙️ Infrastructure</h4>
+        <p class="text-gray-600">Improve speed, reliability, and scale for more users.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+        <h4 class="text-xl font-semibold mb-2">🚀 Pilot Campaigns</h4>
+        <p class="text-gray-600">Fund small-scale test runs with engaged volunteers.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+        <h4 class="text-xl font-semibold mb-2">🤝 Network Support</h4>
+        <p class="text-gray-600">Connect us with those ready to make change.</p>
+      </div>
+    </div>
+
+    <h3 class="text-3xl font-bold text-green-700 mb-8">💚 How You Can Help</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-400 shadow">
+        <h4 class="text-xl font-semibold mb-2">💸 Provide Seed Funding</h4>
+        <p class="text-gray-700">Help us expand features and stability.</p>
+      </div>
+      <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-400 shadow">
+        <h4 class="text-xl font-semibold mb-2">🌱 Join as Advisor/Partner</h4>
+        <p class="text-gray-700">Lend your expertise to guide our growth.</p>
+      </div>
+      <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-400 shadow">
+        <h4 class="text-xl font-semibold mb-2">📢 Make Introductions</h4>
+        <p class="text-gray-700">Connect us with local governments and sponsors.</p>
+      </div>
+    </div>
+    <p class="text-lg text-gray-600 mt-12 max-w-2xl mx-auto">
+      Together, we can empower every citizen to be an eco-hero — one cleanup at a time.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+ <section id="contact" class="py-20 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-extrabold text-gray-800 mb-4">Get Involved</h3>
+    <p class="text-gray-600 text-lg mb-6">
+      Are you a volunteer, local business, or city leader? Join us in building cleaner, greener communities.
+    </p>
+    <p class="text-gray-700 mb-8">
+      Reach out to us directly at <a href="mailto:ecocrewapp@gmail.com" class="text-green-600 hover:underline font-medium">ecocrewapp@gmail.com</a>
+    </p>
+    <a href="mailto:ecocrewapp@gmail.com" class="bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-green-700 transition duration-300">
+      Contact Us
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
+    &copy; 2025 EcoCrew. All rights reserved.
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const responsiveMenu = document.getElementById('responsive-menu');
+    menuButton.addEventListener('click', () => {
+      responsiveMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
